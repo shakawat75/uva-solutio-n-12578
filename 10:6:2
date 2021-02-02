@@ -1,0 +1,24 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main(){
+    int T,L;
+    cin>>T;
+    double c_area,r_area,r,w;
+    for(int i = 0 ; i<T;i++){
+            cin>>L;
+            w = (6.0*L)/10.0;
+            r = (L/5.0);
+            c_area = acos(-1.0)*r*r;
+            r_area = (L*w) - c_area;
+            
+            printf("%.2lf ",c_area);
+            printf("%.2lf",r_area);
+            cout<<endl;
+            
+
+
+        }
+        
+    }
